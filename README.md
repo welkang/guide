@@ -30,10 +30,10 @@
 ##### HTML标签
 
 ###### meta的viewport
-在无线Web开发中，在head头部遇到最常见的问题，就是viewport的设置， 
-```
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
-```
+在无线Web开发中，在head头部遇到最常见的问题，就是viewport的设置
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	
 对于这里面的设置，大家可以Google一下，有非常详细的叙述，我这里不太重复,以下有几个地址，大家可以做下参考
 https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html
@@ -52,6 +52,5 @@ https://developer.apple.com/library/safari/documentation/appleapplications/refer
 比如说nav、footer、article等标签，这些展示型的标签一般可以安全使用，如果不是非常确定某个HTML5标签是否可以使用，建议参考http://caniuse.com/。
 
 * input类型标签
-
-
-
+此类标签是非常特殊的标签，因为这个是和用户交互最紧密的一类标签，也是问题最多的一类标签。
+IOS和Android在HTML5标签上最大的区别莫过于input类型的标签，并且不同Android机对于input类型的实现也大有不同，下面列出比较保险的几个类型：
